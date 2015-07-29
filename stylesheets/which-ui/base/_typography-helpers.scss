@@ -1,0 +1,9 @@
+%headings-text {
+  font-family: "StagSansWeb-Book";
+}
+
+%text-priority-a {
+  @include rhythm-padding(2, 2);
+  @include adjust-font-size-to(36px);
+  @include adjust-leading-to(2);
+}

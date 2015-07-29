@@ -1,0 +1,23 @@
+$base-font-size: 18px;
+$base-line-height: 28px;
+$rhythm-unit: "px";
+
+@import "compass/typography/vertical_rhythm";
+@import "compass/css3/font-face";
+
+@include establish-baseline();
+
+@include font-face("StagSansWeb-Book", font-files("StagSansWeb/StagSansWeb-Book/StagSansWeb-Book.ttf"));
+@include font-face("OpenSans-Regular", font-files("open-sans/opensans_regular/OpenSans-Regular-webfont.ttf"));
+
+@import "typography-helpers";
+
+.wrapper {
+  // @include debug-vertical-alignment();
+}
+
+h1 {
+  @extend %headings-text;
+  @extend %text-priority-a;
+}
+
